@@ -99,6 +99,7 @@ Every project combines thoughtful design, clean engineering, accessibility, and 
 
 ## 📂 Project Structure
 
+```
 ```text
 src/
 ├── assets/
@@ -183,3 +184,4 @@ This project is licensed under the MIT License unless otherwise stated.
 Designed & developed by <strong>Echo in Ink</strong><br>
 https://echoin.ink
 </p>
+
