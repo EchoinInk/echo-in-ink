@@ -28,6 +28,8 @@ coverage
 # Vite
 .vite
 
+.codex/
+.pnpm-store/
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
