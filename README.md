@@ -1,186 +1,185 @@
-# Echo in Ink
+<p align="center">
+  <img src="https://echoin.ink/github-banner.png" alt="Echo in Ink Banner" width="100%">
+</p>
 
-A cinematic, atmospheric creative studio website built with React, TypeScript, Vite, Tailwind CSS, layered CSS, and Framer Motion.
+<h1 align="center">Echo in Ink</h1>
 
-Live site: <https://echoin.ink>
+<p align="center">
+  <strong>Designing the worlds your work lives in.</strong>
+</p>
 
-Echo in Ink is designed as a premium authored studio experience for immersive brand worlds, identity systems, digital atmospheres, creative systems, and emotionally intelligent product concepts.
+<p align="center">
+  Creative Technology Studio • Websites • Applications • AI
+</p>
 
-Stack
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white" />
+</p>
 
-* React 18
-* TypeScript
-* Vite
-* React Router
-* Tailwind CSS
-* Layered CSS design system
-* Framer Motion
+Echo in Ink is a creative technology studio focused on crafting thoughtful digital experiences through design, storytelling, and modern software development.
 
-Local development
+This repository contains the source code for the official **Echo in Ink** website, showcasing the studio's services, portfolio, and philosophy.
 
-Requirements
+---
 
-* Node.js 18+
-* npm
+## 📚 Table of Contents
 
-Install
+- About
+- Why Echo in Ink?
+- Services
+- Tech Stack
+- Features
+- Project Structure
+- Getting Started
+- Philosophy
+- Website
+- Connect
+- License
 
-npm install
+---
 
-Run locally
+## 🌌 Why Echo in Ink?
 
-npm run dev
+Echo in Ink was created with the belief that technology should feel human.
 
-The local development server URL will be shown in the terminal.
+Rather than producing generic websites or applications, the studio focuses on building digital experiences that combine thoughtful design, strong engineering, and meaningful storytelling.
 
-Production build
+---
 
-npm run build
+## ✨ About
 
-Preview production build
+Echo in Ink exists at the intersection of creativity and technology.
 
-npm run preview
+We partner with founders, creators, and businesses to design and build websites, web applications, mobile experiences, and AI-powered tools that are not only functional but meaningful.
 
-Quality checks
+Every project combines thoughtful design, clean engineering, accessibility, and performance to create products that people genuinely enjoy using.
 
-Run the scripts available in package.json, typically:
+---
 
-npm run typecheck
-npm run lint
-npm run build
+## 🚀 Services
 
-Contact form delivery
+- 🌐 Custom Website Design & Development
+- 💻 Web Applications
+- 📱 Mobile App Development
+- 🤖 AI Integrations & Automation
+- 🎨 UI/UX Design
+- 🔌 API Development
+- ⚡ Performance Optimization
+- ♿ Accessibility Improvements
+- 🛠️ Ongoing Support & Maintenance
 
-The Contact page submits to the first-party `/api/contact` endpoint. The included function forwards validated enquiries to Resend without exposing secrets in the client bundle.
+---
 
-Required environment variables:
+## 🛠️ Tech Stack
 
-* `RESEND_API_KEY`
-* `CONTACT_FROM_EMAIL` — use a sender address on a domain verified in Resend
-* `CONTACT_TO_EMAIL` — optional override for the receiving inbox; defaults to `hello@echoin.ink`
+| Category | Technologies |
+|----------|--------------|
+| Frontend | React, TypeScript, Vite |
+| Styling | Tailwind CSS, Framer Motion |
+| Routing | React Router |
+| Tooling | npm, ESLint, Prettier |
+| Deployment | Vercel |
 
-If you deploy somewhere other than Vercel, map `POST /api/contact` to the logic in `api/contact.ts` or port `src/lib/contactServer.ts` into your host’s serverless/runtime entrypoint.
+---
 
-Project structure
+## ✨ Features
 
+- Responsive design
+- Accessible user experience
+- Fast performance
+- Reusable component architecture
+- Smooth animations
+- SEO-friendly structure
+- Optimized for desktop and mobile
+
+---
+
+## 📂 Project Structure
+
+```text
 src/
-├── App.tsx                 # Route table, lazy-loaded pages, page transitions
-├── main.tsx                # Application entry point
-├── pages/                  # Route-level page composition
+├── assets/
 ├── components/
-│   ├── atmosphere/         # Ambient glows, grain, cursor, continuity effects
-│   ├── cards/              # Reusable project, quote, system, and deliverable cards
-│   ├── home/               # Home-page-specific sections and hero
-│   ├── layout/             # Layout, PageShell, Container, Section, Grid
-│   ├── lumo/               # Bespoke Lumo case-study experience
-│   ├── navigation/         # Shared header and footer
-│   ├── orbitals/           # SVG orbital motif library
-│   ├── sections/           # Shared heroes, CTAs, process, offer, and content sections
-│   ├── system/             # Page transitions and shared system behavior
-│   ├── ui/                 # Buttons, labels, selects, headings, visual utilities
-│   └── works/              # Work filtering and project-grid composition
-├── data/                   # Structured content and route data
-├── hooks/                  # Shared React hooks
-├── lib/                    # Utilities and cinematic motion definitions
+├── hooks/
+├── layouts/
+├── lib/
+├── pages/
 ├── styles/
-│   ├── 01-tokens/          # Colour, semantic, spacing, and motion tokens
-│   ├── 02-base/            # Typography, layout, accessibility, foundations
-│   ├── 03-components/      # Shared and page-level component styling
-│   └── 04-utilities/       # Responsive and atmospheric utility rules
-├── assets/                 # Brand, imagery, icons, project media, fonts
-└── types/                  # Shared TypeScript types
-public/                     # Public assets, favicons, fonts, static imagery
+└── utils/
+```
 
-## Key routes
+---
 
-### Route Purpose
+## 🚀 Getting Started
 
-/Studio landing page
-/studio Studio positioning, process, and services
-/works Selected projects and creative explorations
-/works/lumo Bespoke Lumo case study
-/systems Creative systems and structured offerings
-/worlds Worldbuilding and immersive experience direction
-/identity Identity direction and visual systems
-/sessions Creative-direction sessions
-/archive Essays, notes, and editorial material
-/contact Enquiry route
+### Clone the repository
 
-Design system
+```bash
+git clone https://github.com/EchoinInk/echo-in-ink.git
+```
 
-The active visual system is centred around:
+### Install dependencies
 
-* Ink-black and midnight surfaces
-* Moonlit lavender typography
-* Blue, violet, and magenta atmospheric light
-* Fraunces for editorial display moments
-* Neue Montreal for structural copy and UI
-* Wide-tracked labels and metadata
-* Large negative space and slow editorial rhythm
-* Soft image scrims, grain, vignettes, and broad glows
-* Orbital SVG motifs as a recurring system language
-* Restrained motion with reduced-motion support
+```bash
+npm install
+```
 
-Primary design-system files:
+### Start the development server
 
-src/styles/01-tokens/tokens.css
-src/styles/02-base/typography-system.css
-src/styles/02-base/layout.css
-src/styles/02-base/accessibility.css
-src/styles/03-components/
+```bash
+npm run dev
+```
 
-Implementation principles
+### Build for production
 
-When making changes:
-
-* Preserve the dark cinematic editorial direction.
-* Prefer existing design tokens before introducing raw spacing, colour, or typography values.
-* Reuse shared primitives before creating new one-off variants.
-* Keep route-specific styling focused on intentional composition and art direction.
-* Maintain dedicated mobile image crops where they already exist.
-* Respect prefers-reduced-motion.
-* Test at desktop, tablet, and mobile widths.
-* Avoid generic SaaS styling, bright utility surfaces, excessive cards, or conventional agency-template patterns.
-
-Before committing
-
-Run:
-
-npm run typecheck
-npm run lint
+```bash
 npm run build
+```
 
-Also check:
+---
 
-* Desktop at approximately 1440px wide
-* Mobile at approximately 390px wide
-* No horizontal overflow
-* Hero image crops remain intentional
-* CTA and form states remain readable
-* Keyboard focus and mobile navigation still work
-* No console errors
+## 💭 Philosophy
 
-Documentation
+Technology should support ideas—not distract from them.
 
-Useful repository documents:
+At Echo in Ink, every project is approached with a focus on:
 
-WEBSITE_DESIGN_SYSTEM_AUDIT.md
-WEBSITE_DESIGN_INCONSISTENCIES_REPORT.md
-ECHO_IN_INK_UPDATED_BLUEPRINT.md
+- Clarity
+- Storytelling
+- Thoughtful design
+- Accessibility
+- Performance
+- Maintainable engineering
 
-Security and repository hygiene
+The goal isn't simply to build software—it's to create digital experiences that communicate, inspire, and endure.
 
-Do not commit:
+---
 
-node_modules/
-dist/
-build/
-.env
-.env.local
-.env.production
-API keys
-deployment tokens
-private customer data
-database exports
+## 🌍 Website
 
-Use .env.example for required environment-variable names without real credentials.
+**https://echoin.ink**
+
+---
+
+## 📫 Connect
+
+- **Website:** https://echoin.ink
+- **GitHub:** https://github.com/EchoinInk
+
+Have a project in mind? We'd love to hear from you.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License unless otherwise stated.
+
+---
+
+<p align="center">
+Designed & developed by <strong>Echo in Ink</strong><br>
+https://echoin.ink
+</p>
